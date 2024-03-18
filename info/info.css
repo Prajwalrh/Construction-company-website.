@@ -1,0 +1,364 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    margin-left: -10px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(92, 92, 92);
+    padding: 10px;
+    border-radius: 0 0 0px 0px;
+    z-index: 11112222;
+    
+}
+
+
+.navbar img {
+    background-color: azure;
+    margin-left: 0;
+    height: 70px;
+    width: 300px;
+    margin-top: 0px;
+    
+    border-radius: 0px 0px 0px 0px;
+}
+
+.ul {
+    visibility: hidden;
+    /* background-color: azure; */
+    width: 50%;
+    border-radius: 20px 20px 20px 20px;
+   
+}
+
+.navbaractive {
+    position: absolute;
+    visibility: visible;
+    color: rgb(0, 0, 0);
+    display: flex;
+    transition: 1s;
+    top: 40px;
+    list-style: none;
+    gap: 50px;
+    
+    left: 450px;
+    font-size: 25px;
+}
+
+.ul li {
+    color: rgb(255, 255, 255);
+    cursor: pointer; 
+}
+
+.ul li:hover{
+    /* background-color: rgb(249, 98, 98); */
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 4px 4px rgb(234, 78, 78)
+}
+
+a {
+    color: rgb(255, 255, 255); /* Change text color to black */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Optionally, change cursor style */
+}
+
+#src{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 70px;
+    top: 30px;
+    background: transparent;
+    
+    padding: 3px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar img {
+        height: 50px;
+    }
+
+    .ul {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar img {
+        margin-bottom: 10px;
+    }
+
+    .ul {
+        width: 100%;
+        border-radius: 0;
+        top: initial;
+        left: initial;
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        display: none;
+    }
+
+    .navbaractive .ul {
+        display: block;
+    }
+}
+
+
+
+.a{
+    display: flex;
+    flex-direction: column;
+}
+
+.a2 {
+    position: absolute;
+    background-color: crimson;
+    height: 500px;
+    width: 900px;
+    right: 250px;
+    top: 110px;
+    opacity: .6;
+}
+
+.a2 p{
+    
+    color: white;
+    left: 140px;
+    margin-right: 5px;
+    margin-left: 150px;
+    font-size: 30px;
+    margin-top: 80px;
+    font-weight: 4px;
+    text-align: justify;
+    
+}
+
+.name {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    top: 450px;
+    right: 0;
+
+}
+
+.name1{
+    position: absolute;
+    font-size: 30px;
+    bottom: 10px;
+    left: 5px;
+    color: white;
+}
+
+.a1 img {
+    position: absolute;
+    top: 200px;
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+    left: 200px;
+    border-radius: 50%;
+    border: 8px solid rgb(255, 255, 255)
+}
+
+
+
+.a3 img {
+    position: absolute;
+    top: 800px;
+    height: 250px;
+    width: 300px;
+    z-index: 1;
+    left: 970px;
+    border-radius: 50%;
+    border: 8px solid rgb(255, 255, 255)
+}
+
+.a4 {
+    position: absolute;
+    background-color: crimson;
+    height: 500px;
+    width: 900px;
+    right: 420px;
+    top: 680px;
+    opacity: .6;
+}
+
+.a4 p{
+    
+    color: white;
+    left: 140px;
+    margin-right: 140px;
+    margin-left: 5px;
+    font-size: 30px;
+    margin-top: 80px;
+    text-align: justify;
+    font-weight: 40px;
+}
+.a5 img {
+    position: absolute;
+    top: 1400px;
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+    left: 200px;
+    border-radius: 50%;
+    border: 8px solid rgb(255, 255, 255)
+}
+
+
+
+.a6 {
+    position: absolute;
+    background-color: crimson;
+    height: 500px;
+    width: 900px;
+    right: 250px;
+    top: 1300px;
+    opacity: .6;
+}
+.a6 p{
+    
+    color: white;
+    left: 140px;
+    margin-right: 5px;
+    margin-left: 150px;
+    font-size: 30px;
+    margin-top: 80px;
+    text-align: justify;
+    font-weight: 40px;
+}
+
+.footer{
+    position: relative;
+    background-color: black;
+    height: 450px;
+    width: 103%;
+    left: -7px;
+    top: 1905px;
+    opacity: .8;
+  }
+
+  .footerinfo{
+    position: relative;
+    display: flex;
+  }
+  
+  .footer1{
+    width: 20%;
+    padding: 0 15px;
+ }
+ .footer1 h4{
+     font-size: 30px;
+     color: #ffffff;
+     text-transform: capitalize;
+     margin-bottom: 35px;
+     font-weight: 500;
+     position: relative;
+ }
+ .footer1 h4::before{
+     content: '';
+     position: absolute;
+     left:0;
+     bottom: -10px;
+     background-color: #e91e63;
+     height: 2px;
+     box-sizing: border-box;
+     width: 50px;
+ }
+ .footer1 li:not(:last-child){
+     margin-bottom: 10px;
+ }
+ .footer1 ul li a{
+     font-size: 20px;
+     text-transform: capitalize;
+     color: #ffffff;
+     text-decoration: none;
+     font-weight: 300;
+     color: #bbbbbb;
+     display: visible;
+     transition: all 0.3s ease;
+     
+ }
+ .footer1 li a:hover{
+     color: #f90000;
+     padding-left: 8px;
+ }
+
+ .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 35px 2px;
+    
+  }
+  
+  .fa:hover {
+    opacity: .8;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-youtube-play {
+    background: #bb0000;
+    color: white;
+  } 
+  #fname{
+    position: relative;
+    padding: 10px;
+    height: 20px;
+    width: 200px;
+    top: 120px;
+}
+
+  #animatedButton {
+    position: relative;
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 15px 25px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    top: 120px;
+  }
+  
+  
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes scale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes color-change {
+    0% { background-color: #4CAF50; }
+    50% { background-color: #ff5733; }
+    100% { background-color: #4CAF50; }
+  }
